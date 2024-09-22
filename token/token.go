@@ -1,9 +1,9 @@
 package token
 
-type TokenTypte string
+type TokenType string
 
 type Token struct {
-	Type    TokenTypte
+	Type    TokenType
 	Literal string
 }
 
