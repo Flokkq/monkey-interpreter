@@ -1,48 +1,25 @@
-# git-cliff template
+# Monkey Programming Language
 
-Template repo for using [git-cliff](https://github.com/orhun/git-cliff)
+Welcome to the Monkey programming language! This project is an implementation based on the concepts taught in the books [Writing An Interpreter In Go](https://interpreterbook.com/) and [Writing A Compiler In Go](https://compilerbook.com/) by Thorsten Ball. 
 
-## Prerequisites
+## About Monkey
 
-Before you begin, ensure that you have the following tools installed:
+Monkey is a dynamically typed programming language designed to be implemented by readers of the books. There is no "official" implementation of Monkey; 
 
-- **gpg**: For signing commits and tags.
-- **git-cliff**: For generating changelogs based on commit messages.
-- **nix**: Each assignment comes with a flake.nix (easily install dependencies)  
+### Example Code
 
-### Installing Dependencies
+```js
+let five = 5;
+let ten = 10;
 
-You can install all necessary tools using Nix by running:
+let add = fn(x, y) {
+    x + y;
+};
+let result = add(five, ten);
 
-```bash
-nix develop .
+if (5 < 10) {
+    return true;
+} else {
+    return false;
+}
 ```
-
-This command will set up the development environment with `gpg` and `git-cliff` installed, as specified in the `flake.nix` file.
-
-## Commit Message Guidelines
-
-To maintain a consistent and meaningful commit history, adhere to the following commit message conventions. Each commit message should start with one of the predefined prefixes:
-
-| Prefix     | Description                  |
-|------------|------------------------------|
-| `feat`     | :sparkles: **Features**      |
-| `fix`      | :bug: **Bug Fixes**          |
-| `refactor` | :tractor: **Refactoring**    |
-| `init`     | :tada: **Initial Commit**    |
-| `style`    | :art: **Styling**            |
-| `revert`   | :rewind: **Reverts**         |
-| `chore`    | :wrench: **Chore**           |
-
-**Note:** Use lowercase letters for prefixes and follow them with a colon and a space.
-
-## Release Process
-
-Releasing a new assignment version is straightforward. Follow these steps to create a new release:
-
-```bash
-    ./release.sh vx.y.z-assignmentName
-    git push && git push --tags
-```
-
-If you are encountering any issues feel free to look at the [git-cliff docs](https://github.com/orhun/git-cliff.git)
