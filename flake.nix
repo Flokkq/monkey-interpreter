@@ -1,5 +1,5 @@
 {
-  description = "A basic flake for git-cliff";
+  description = "A basic flake for go";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
@@ -16,8 +16,11 @@
         {
           devShells.default = pkgs.mkShell {
             nativeBuildInputs = [
+                # git-cliff
                 pkgs.git-cliff
                 pkgs.gnupg
+
+                pkgs.go
             ];
           };
         }
