@@ -17,19 +17,19 @@ var keywords = map[string]TokenType{
 	"return": RETURN,
 }
 
-func LookupIdent(identifier string) TokenType {
+func LookupIdentifierType(identifier string) TokenType {
 	if tok, ok := keywords[identifier]; ok {
 		return tok
 	}
-	return IDENT
+	return IDENTIFIER
 }
 
 const (
 	ILLEGAL = "ILLEGAL"
 	EOF     = "EOF"
 
-	IDENT = "IDENT"
-	INT   = "INT"
+	IDENTIFIER = "IDENT"
+	INT        = "INT"
 
 	ASSIGN   = "="
 	PLUS     = "+"
@@ -38,10 +38,10 @@ const (
 	ASTERISK = "*"
 	SLASH    = "/"
 
-	LT  = "<"
-	GT  = ">"
-	EQ  = "=="
-	NEQ = "!="
+	LT     = "<"
+	GT     = ">"
+	EQ     = "=="
+	NOT_EQ = "!="
 
 	COMMA     = ","
 	SEMICOLON = ";"
