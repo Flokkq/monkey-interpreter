@@ -4,22 +4,83 @@ Welcome to the Monkey programming language! This project is an implementation ba
 
 ## About Monkey
 
-Monkey is a dynamically typed programming language designed to be implemented by readers of the books. There is no "official" implementation of Monkey; 
+Monkey is a programming language that supports various data types, functions, conditionals, recursion, and closures. Here's an overview of its features:
 
-### Example Code
+### Integers & Arithmetic Expressions
 
-```js
-let five = 5;
-let ten = 10;
+```javascript
+// Integers & arithmetic expressions...
+let version = 1 + (50 / 2) - (8 * 3);
+```
 
-let add = fn(x, y) {
-    x + y;
+### Strings
+
+```javascript
+// ... and strings
+let name = "The Monkey programming language";
+```
+
+### Booleans
+
+```javascript
+// ... booleans
+let isMonkeyFastNow = true;
+```
+
+### Arrays & Hash Maps
+
+```javascript
+// ... arrays & hash maps
+let people = [{"name": "Anna", "age": 24}, {"name": "Bob", "age": 99}];
+```
+
+It also has functions!
+
+### User-defined Functions
+
+```javascript
+// User-defined functions...
+let getName = fn(person) { person["name"]; };
+getName(people[0]); // => "Anna"
+getName(people[1]); // => "Bob"
+```
+
+## Built-in Functions
+
+```javascript
+// and built-in functions
+puts(len(people));  // prints: 2
+```
+
+### Conditionals and Recursion
+
+Monkey supports conditionals, implicit and explicit returns, and recursive functions. Here's an example of a recursive function to compute Fibonacci numbers:
+
+```javascript
+let fibonacci = fn(x) {
+  if (x == 0) {
+    0
+  } else {
+    if (x == 1) {
+      return 1;
+    } else {
+      fibonacci(x - 1) + fibonacci(x - 2);
+    }
+  }
 };
-let result = add(five, ten);
+```
 
-if (5 < 10) {
-    return true;
-} else {
-    return false;
-}
+### Closures
+
+The crown jewel in every Monkey implementation is closures:
+
+```javascript
+// `newAdder` returns a closure that makes use of the free variables `a` and `b`:
+let newAdder = fn(a, b) {
+    fn(c) { a + b + c };
+};
+// This constructs a new `adder` function:
+let adder = newAdder(1, 2);
+
+adder(8); // => 11
 ```
