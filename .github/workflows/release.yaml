@@ -41,5 +41,5 @@ jobs:
           release_name: "Release ${{ github.ref }}"
           body: ${{ steps.git-cliff.outputs.content }}
           draft: false
-          prerelease: false
+          prerelease: true
           token: ${{ secrets.GH_PAT }}
