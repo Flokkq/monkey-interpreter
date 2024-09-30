@@ -5,7 +5,7 @@
 
 [remote.github]
 owner = "Flokkq"
-repo = "https://github.com/orhun/git-cliff/blob/main/cliff.toml"
+repo = "https://github.com/Flokkq/monkey-interpreter"
 
 [changelog]
 header = """
