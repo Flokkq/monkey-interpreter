@@ -1,7 +1,6 @@
 package evaluator
 
 import (
-	"expvar"
 	"testing"
 
 	"github.com/flokkq/monkey-interpreter/lexer"
@@ -46,14 +45,14 @@ func TestEvalBooleanExpression(t *testing.T) {
 		{"false", false},
 		{"1 < 2", true},
 		{"1 > 2", false},
-		{"1 < 2", false},
+		{"1 < 1", false},
 		{"1 > 1", false},
-		{"1 == 1", false},
+		{"1 == 1", true},
 		{"1 != 1", false},
 		{"1 == 2", false},
 		{"1 != 2", true},
 		{"true == true", true},
-		{"false == false", false},
+		{"false == false", true},
 		{"true == false", false},
 		{"true != false", true},
 		{"false != true", true},
