@@ -1,6 +1,40 @@
 # Changelog
 
 
+## [0.3.0-chapter3](https://github.com/Flokkq/https://github.com/Flokkq/monkey-interpreter/compare/v0.2.0-chapter2..v0.3.0-chapter3) - 2024-10-27
+
+
+
+
+### ✨ Features
+
+- *(evaluate)* Eval functions and closures - ([1a0ea18](https://github.com/Flokkq/https://github.com/Flokkq/monkey-interpreter/commit/1a0ea182be1fefa966a209b3eeaba4b05f5edfda))
+- *(evaluate)* Eval let expressions and bindings - ([3e5f5a3](https://github.com/Flokkq/https://github.com/Flokkq/monkey-interpreter/commit/3e5f5a36bc673d2d7ce8c5d13902ce6103a46977))
+- *(evaluate)* Add environment to keep track of variables - ([223c91b](https://github.com/Flokkq/https://github.com/Flokkq/monkey-interpreter/commit/223c91bf8e147d3738242cbcd49b31e976695e4f))
+- *(evaluate)* Add error handling - ([1158402](https://github.com/Flokkq/https://github.com/Flokkq/monkey-interpreter/commit/11584024e276dff0175c6b509c7f9433fa6731d1))
+- *(evaluate)* Eval returnstatements - ([005ec05](https://github.com/Flokkq/https://github.com/Flokkq/monkey-interpreter/commit/005ec05cd65f6bbd2d6d32420f79a4d42e99ca75))
+- *(evaluate)* Evaluate if else expressions - ([759ee13](https://github.com/Flokkq/https://github.com/Flokkq/monkey-interpreter/commit/759ee139d4b0f8dcdae48dcb4d24e6f28341df9e))
+- *(evaluate)* Eval comparison infix expressions - ([cf07013](https://github.com/Flokkq/https://github.com/Flokkq/monkey-interpreter/commit/cf070133959bf1fb72384952bed7b0c1b34e2523))
+- *(evaluate)* Eval arithmetic infix expressions - ([cfc9ea2](https://github.com/Flokkq/https://github.com/Flokkq/monkey-interpreter/commit/cfc9ea2bf364f4e9d877b57f9a8c7d17d2e19835))
+- *(evaluate)* Eval prefix expressions - ([81a7a2e](https://github.com/Flokkq/https://github.com/Flokkq/monkey-interpreter/commit/81a7a2e74c1e92c79f8839f00ffc4b70d15a1511))
+- *(evaluate)* Eval null - ([802eaa1](https://github.com/Flokkq/https://github.com/Flokkq/monkey-interpreter/commit/802eaa16f101acec2d9bcd2aa703ae619b414b00))
+- *(evaluate)* Eval booleans - ([ec6bf1b](https://github.com/Flokkq/https://github.com/Flokkq/monkey-interpreter/commit/ec6bf1b9fbe50dd4193aa7b5cd70873078b1c76c))
+- *(repl)* Eval program - ([8c61524](https://github.com/Flokkq/https://github.com/Flokkq/monkey-interpreter/commit/8c615249c70f24d4f5329663fd6fa5e677f1800b))
+- *(evaluate)* Eval integers - ([1030fc4](https://github.com/Flokkq/https://github.com/Flokkq/monkey-interpreter/commit/1030fc421c9c2c895e3a3ed17ad2d83734e19e0f))
+- *(evaluate)* Introducig the billion dollar mistake - ([52120dd](https://github.com/Flokkq/https://github.com/Flokkq/monkey-interpreter/commit/52120ddd3bce9a4082bd481e6456e564f574efd7))
+- *(evaluate)* Wrap booleans - ([7b765ca](https://github.com/Flokkq/https://github.com/Flokkq/monkey-interpreter/commit/7b765ca4bf939366b4226b2a55090af21be9356b))
+- *(evaluate)* Wrap integers - ([a793d6a](https://github.com/Flokkq/https://github.com/Flokkq/monkey-interpreter/commit/a793d6a5ebdc15414e79c25a85a75b70f83bdf5f))
+- *(evaluate)* Basic object structure - ([ff728e7](https://github.com/Flokkq/https://github.com/Flokkq/monkey-interpreter/commit/ff728e72ca64536e1c6b67255c955125b65c53a1))
+
+### 🐛 Bug Fixes
+
+- *(eval)* Fix boolean test cases - ([dd50d35](https://github.com/Flokkq/https://github.com/Flokkq/monkey-interpreter/commit/dd50d3594b78a0cb205fc2dfdaafd02c2321c79f))
+
+### 🔧Chores
+
+- *(repo)* Remove assets - ([c3b4326](https://github.com/Flokkq/https://github.com/Flokkq/monkey-interpreter/commit/c3b4326c13519e92288d08e6cbea595822d4b23b))
+
+
 ## [0.2.0-chapter2](https://github.com/Flokkq/https://github.com/Flokkq/monkey-interpreter/compare/v0.1.0-chapter1..v0.2.0-chapter2) - 2024-10-01
 
 
@@ -57,6 +91,7 @@
 
 ### 🔧Chores
 
+- *(release)* Prepare for v0.2.0-chapter2 - ([84d5b3a](https://github.com/Flokkq/https://github.com/Flokkq/monkey-interpreter/commit/84d5b3a043d6ebbd0f27d3af2a4a5a07e60349be))
 - *(ci)* Change auto-generated releases to be pre-release - ([79fc75c](https://github.com/Flokkq/https://github.com/Flokkq/monkey-interpreter/commit/79fc75c0db94c4ba2d2d9d7109d1955434f588f0))
 - *(repo)* Update README with source code examples from official website - ([faddf2b](https://github.com/Flokkq/https://github.com/Flokkq/monkey-interpreter/commit/faddf2bb5501c89747a60401a3a1872bccd1893c))
 - *(repo)* Add README - ([7afa27c](https://github.com/Flokkq/https://github.com/Flokkq/monkey-interpreter/commit/7afa27cf11492ccff727ab985e13e7b0ae68f5a6))
