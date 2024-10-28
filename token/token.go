@@ -30,6 +30,7 @@ const (
 
 	IDENTIFIER = "IDENT"
 	INT        = "INT"
+	STRING     = "STRING"
 
 	ASSIGN   = "="
 	PLUS     = "+"
